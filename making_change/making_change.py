@@ -12,6 +12,7 @@ if __name__ == "__main__":
   if len(sys.argv) > 1:
     denominations = [1, 5, 10, 25, 50]
     amount = int(sys.argv[1])
+    
     print("There are {ways} ways to make {amount} cents.".format(ways=making_change(amount, denominations), amount=amount))
   else:
     print("Usage: making_change.py [amount]")
